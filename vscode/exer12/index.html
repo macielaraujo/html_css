@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <title>Vídeo</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <p>Este vídeo está hospedado localmente</p>
+    <video src="midia/video-pexels.mp4" poster="midia/capa-vidio500.jpg" width="500" height="400" controls autoplay loop></video>
+
+    <!--Outra forma, melhor que a maneira acima:
+        <video src="midia/video-pexels.mp4" poster="midia/capa-vidio500.jpg" width="500" height="400" controls>
+        <source src="local" type="tipo mp4"
+        <source src="local" type="tipo m4v"
+        <source src="local" type="tipo webm"
+        <source src="local" type="tipo1 ogv"
+        <p>Mensagem para caso o navegador não carregue nenhum
+            dos formatos de video listado acima
+        </video>
+    -->
+
+    <p>Vídeo do YouTube</p>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/CAYDRIbXFAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
