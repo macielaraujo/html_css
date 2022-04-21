@@ -4,8 +4,8 @@
 
 :root{
     --cor1: #56b6c5;
-    --cor2: #fcd4dd;
-    --cor3: #63c690;
+    --cor2: rgba(247, 252, 215, 0.84);
+    --cor3: #7563c6;
     --cor4: #e0ff9d;
     --cor5: #250f77;
 
@@ -64,6 +64,19 @@ main{
     max-width: 800px;
     margin: auto;
     box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.146);
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+main a{
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+    padding: 5px;
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: rgb(223, 217, 217);
+    border-radius: 5px;
 }
 main h1{
     padding-bottom: 10px;
@@ -98,6 +111,41 @@ main ul{
 }
 ul>li{
     padding-bottom: 10px;
+}
+
+main div#video{
+    background-color: var(--cor5);
+    margin: 20px 20px 30px 20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+
+}
+
+main div>iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main div.codigo-exemplo{
+    background-color: rgb(238, 231, 231);
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+main div.bloco{
+    max-width: 300px;
+    background-color: rgb(238, 231, 231);
+    padding: 5px;
+    border-radius: 3px;
+    margin: auto;
+}
+
+main div.bloco>code{
+    margin: auto;
 }
 
 footer{
