@@ -146,6 +146,7 @@ main div.bloco{
 
 main div.bloco>code{
     margin: auto;
+    text-align : center;
 }
 
 footer{
