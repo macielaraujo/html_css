@@ -26,7 +26,7 @@ header{
     color: white;
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.381);
     text-align: center;
-    min-width: 500px;
+    min-width: 300px;
 }
 header>h1{
     padding-top: 20px;
