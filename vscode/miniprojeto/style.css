@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 :root{
-    --cor1: #253a3d;
+    --cor1: #262f31;
     --cor2: rgba(251, 255, 219, 0.84);
     --cor3: #7563c6;
     --cor4: #e0ff9d;
@@ -144,7 +144,7 @@ main div.codigo-exemplo{
     margin-right: 10px;
 }
 main div.bloco{
-    max-width: 350px;
+    max-width: 300px;
     background-color: rgb(238, 231, 231);
     padding: 5px;
     border-radius: 3px;
