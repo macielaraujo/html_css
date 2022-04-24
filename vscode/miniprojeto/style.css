@@ -144,7 +144,8 @@ main div.codigo-exemplo{
     margin-right: 10px;
 }
 main div.bloco{
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 307px;
     background-color: rgb(238, 231, 231);
     padding: 5px;
     border-radius: 3px;
@@ -152,8 +153,9 @@ main div.bloco{
 }
 
 main div.bloco p{
-    margin: auto;
-    text-align : center;
+    
+    padding-left: 10px;
+    padding-right: 15px;
 }
 
 footer{
