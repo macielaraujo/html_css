@@ -153,6 +153,7 @@ main .codigo-exemplo{
     margin-right: 20px;
 }
 main .bloco{
+    display: block;
     min-width: 300px;
     max-width: 305px;
     background-color: rgb(238, 231, 231);
@@ -162,14 +163,14 @@ main .bloco{
 }
 
 main aside{
+    display: block;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: var(--cor3);
     padding: 15px;
     border-radius: 5px;
     color: var(--cor4);
-    margin-right: 30px;
-    margin-left: 10px;
+    margin-right: 20px;
 }
 
 picture{
