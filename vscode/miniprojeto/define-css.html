@@ -23,7 +23,7 @@
     </nav>
 
     <main>
-        <h1>O que é CSS? Guia Básico para Iniciantes</h1>
+        <h1>O que é CSS?</h1>
 
         <p>CSS é a sigla para o termo em inglês <em>Cascading Style Sheets</em> que, traduzido para o português, significa Folha de Estilo em Cascatas. O <strong>CSS</strong> é fácil de aprender e entender e é facilmente utilizado com as linguagens de marcação HTML ou XHTML. Veja nosso tutorial sobre o que é CSS, como ele surgiu e como utilizar no seu site.</p>
 
@@ -76,7 +76,9 @@
 
         <h2>Anatomia de um comando CSS</h2>
         <p>O CSS estipula regras para o arquivo em html. Com cada regra é possível estilizar o conteúdo todo ou somente determinados elementos. Por isso entenda, um comando básico é composto por seletor e declarações, que contém propriedade e valor.</p>
+
         <code class="codigo-exemplo">SELETOR {PROPRIEDADE: VALOR}</code>
+
         <p>A sintaxe do CSS é muito simples de aprender. O seletor seleciona quais elementos em html receberão a propriedade. Pode ser p (parágrafo) ou o body (corpo da sua página). Já a propriedade pode ser a cor ou algo mais específico como cor do fundo (background). E por último o valor, que determina o valor da propriedade.</p>
         <p>Vamos simular um exemplo. Digamos que o objetivo é mudar a fonte de uma tag h1. Para isso podemos usar:</p> 
         <code class="codigo-exemplo">h1 {font-size: 20px;}</code>
@@ -117,7 +119,7 @@
 
         <h3>Elementos Básicos do CSS</h3>
         <p>Os elementos são tags do HTML, #id e .classe.</p>
-        <p>1. Tags HTML</p>
+        <p><strong>1. Tags HTML</strong></p>
         <p>
             body, 
             h1, 
@@ -129,7 +131,7 @@
             span, 
             p
         </p>
-        <p>2. Classes CSS</p>
+        <p><strong>2. Classes CSS</strong></p>
         <p>Criar e usar uma classe CSS é simples. No documento CSS basta colocar .nome-da-classe-que-deseja . Abaixo criamos a classe título:</p>
 
         [imagem ilustrando o seletor da classe t�tulo]
@@ -146,34 +148,45 @@
             &lt;h1 class="titulo fonte-grande sublinhado">Melhor site&lt;/h1>
         </code>
 
-        Nesta tag foram usadas três classes: �titulo�, �fonte-grande� e �sublinhado�. Mas para que todas estas classes tenham efeito �preciso cri�-las no CSS. Veja como criamos estas classes:
+        <p>Nesta tag foram usadas três classes: "titulo", "fonte-grande" e "sublinhado". Mas para que todas estas classes tenham efeito é preciso criá-las no CSS. Veja como criamos estas classes:</p>
+
         [imagem do codigo css criando as classes fonte-grande e sublinhado]
-        3- Criando ID�s CSS:
-        O uso dos ID�s em CSS � parecido com as classes, mas as principais diferen�as s�o que os id�s s�o identificados com # e s� podem ser usados um id por tag html. Para adicionar um ID ao HTML, adicione como par�metro id=��.
-        Veja que a quando usamos no HTML, tamb�m exclu�mos o #  do id da mesma forma que exclu�mos o . da classe.
-        [imagem da css implementando o id bot�o e abaixo o html com a tag <a> que usa esse id]
+
+        <p><strong>3- Criando ID's CSS:</strong></p>
+        <p>O uso dos ID's em CSS é parecido com as classes, mas as principais diferenças são que os id's são identificados com # e só podem ser usados um id por tag html. Para adicionar um ID ao HTML, adicione como parâmetro id="".</p>
+        Veja que quando usamos o ID no HTML, também excluímos o # do id da mesma forma que excluímos o . da classe.
+
+        [imagem da css implementando o id bot�o e abaixo o html com a tag &lt;a> que usa esse id]
+
         <aside>
-        DICA: Este par�metro de ID�s n�o � o mais apropriado para se usar em uma p�gina para muitos bot�es pois pode causar conflitos com a linguagem de programa��o JavaScript, que utiliza normalmente dos ID�s no HTML para realizar a��es mais complexas.
+        DICA: Este parâmetro de ID's não é o mais apropriado para se usar em uma página para muitos botões pois pode causar conflitos com a linguagem de programação JavaScript, que utiliza normalmente dos ID's no HTML para realizar ações mais complexas.
         </aside>
 
-        Como adicionar CSS no HTML sem a tag <link>?
-        Existem duas outras maneiras de se adicionar CSS no HTML, apesar de n�o serem recomendadas devido a um padr�o adotado mundialmente, � nosso dever te mostrar como faz.
-        1- Adicionar CSS no HTML sem uso do arquivo externo
-        Voc� pode adicionar o CSS colocando o estilo dentro do pr�prio HTML, sem usar um arquivo CSS externo como mostra o exemplo abaixo:
+        <h2>Como adicionar CSS no HTML sem a tag &lt;link>?</h2>
+        <p>Existem duas outras maneiras de se adicionar CSS no HTML, apesar de não serem recomendadas devido a um padrão adotado mundialmente, é nosso dever te mostrar como faz.</p>
+
+        <h3>1- Adicionar CSS no HTML sem uso do arquivo externo</h3>
+        <p>Você pode adicionar o CSS colocando o estilo dentro do próprio HTML, sem usar um arquivo CSS externo como mostra o exemplo abaixo:</p>
+
         [imagem do html implementando a tag style no cabe�alho]
-        Neste exemplo, o estilo fica dentro do HTML mesmo com o uso da tag <style> dentro da tag <head>. Isso faz com que tudo fique centralizado em um �nico documento.
-        E por que n�o � recomendado? Quando h� muitas linhas de estilo isso pode causar uma demora ao abrir a p�gina uma vez que o navegador l� o seu documento de cima para baixo, linha por linha. Ent�o se tiver muitas linhas de estilo para ler, vai demorar mais para o conte�do da p�gina ser mostrado.
-        Por isso, o ideal � usar a tag <link> para que, ao inv�s de ler muitas linhas de estilo, o navegador leia somente uma refer�ncia para outro arquivo e assim fazer com que seu conte�do seja carregado mais rapidamente.
-        2- Adicionar CSS no HTML utilizando o par�metro style
-        Voc� pode adicionar CSS no HTML utilizando o par�metro style em uma tag html espec�fica. Mas isso afetar� somente aquela tag e n�o todas as demais tags com o mesmo nome. Ent�o, ao inv�s de usarmos os par�metros id=�� ou  class=��, utilizaremos o par�metro style=��:
-        [code]
-        <h1 style=�font-size: 3rem;color: #333;text-align: center;�>
-        E por que n�o � recomendado? Este tipo de uso de estilos se torna um problema caso outros elementos tenham as mesmas caracter�sticas do seu t�tulo, por exemplo. Com isso, voc� teria que copiar todo o par�metro style da tag h1.
-        Diante de disso, conclu�mos tamb�m que o mais recomendado � o uso de classes atrav�s de um arquivo de estilo externo ao CSS. Assim, conseguimos usar os estilos de forma mais limpa e r�pida e � poss�vel reutilizar essas classes em outras tags sempre que desejar, sem afetar o tempo de carregamento da p�gina.
+
+        <p>Neste exemplo, o estilo fica dentro do HTML mesmo, com o uso da tag &lt;style> dentro da tag &lt;head>. Isso faz com que tudo fique centralizado em um único documento.</p>
+        <p>E por que não é recomendado? Quando há muitas linhas de estilo isso pode causar uma demora ao abrir a página uma vez que o navegador lê o seu documento de cima para baixo, linha por linha. Então se tiver muitas linhas de estilo para ler, vai demorar mais para o conteúdo da página ser mostrado.</p>
+        <p>Por isso, o ideal é usar a tag &lt;link> para que, ao invés de ler muitas linhas de estilo, o navegador leia somente uma referência para outro arquivo e assim fazer com que seu conteúdo seja carregado mais rapidamente.</p>
+
+        <h3>2- Adicionar CSS no HTML utilizando o parâmetro style</h3>
+        <p>Você pode adicionar CSS no HTML utilizando o parâmetro style em uma tag html específica. Mas isso afetará somente aquela tag e não todas as demais tags com o mesmo nome. Então, ao invés de usarmos os parâmetros id="" ou  class="", utilizaremos o parâmetro style="":</p>
+        
+        <code>
+            &lt;h1 style="font-size: 3rem;color: #333;text-align: center;">
+        </code>
+
+        <p>E por que não é recomendado? Este tipo de uso de estilos se torna um problema caso outros elementos tenham as mesmas características do seu título, por exemplo. Com isso, você teria que copiar todo o parâmetro style da tag h1.</p>
+        <p>Diante de disso, concluímos também que o mais recomendado é o uso de classes através de um arquivo de estilo externo ao CSS. Assim, conseguimos usar os estilos de forma mais limpa e rápida e é possível reutilizar essas classes em outras tags sempre que desejar, sem afetar o tempo de carregamento da página.</p>
     </main>
 
     <footer>
-        <p>Deixo claro que esse conteúdo é apenas uma cópia do site <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#:~:text=O%20HTML%20foi%20inventado%20por%20Tim%20Berners-Lee%2C%20um,do%20H">hostinger tutoriais</a>.</p>
+        <p>Deixo claro que esse conteúdo é apenas uma cópia do site <a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css" target="_blank">hostinger tutoriais</a>.</p>
     </footer>
 </body>
 </html>
