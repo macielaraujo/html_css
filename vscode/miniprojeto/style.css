@@ -163,6 +163,14 @@ main aside{
     padding: 15px;
     border-radius: 5px;
     color: var(--cor4);
+    margin-right: 20px;
+}
+
+picture{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer{
