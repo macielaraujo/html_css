@@ -106,6 +106,9 @@ main h3{
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor5);
+    margin-right: 10px;
 }
 main p{
     text-indent: 20px;
