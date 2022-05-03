@@ -96,7 +96,9 @@
         <h2>Como Criar uma Folha de Estilo</h2>
         <p>Para criar uma folha de estilos é bem simples. Basta abrir seu editor de códigos, como o Sublime, e criar um documento novo. Depois de criado, salve como estilo.css, mesmo sem ainda ter escrito nada (este .css é o que define um arquivo ser reconhecido pelo navegador como a folha de estilo).</p>
 
-        [imagem mostrando o local da cria��o de um documento style.css no explorador]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/explorador-salvando-arquivocss-300.png" type="image/png">
+            <img src="imagem/explorador-salvando-arquivocss-700.png" alt="Salvando arquivo css no explorador de arquivos"></picture>
 
         <p>Assim que for salvo, o editor de texto vai conseguir ler o arquivo com mais facilidade, até mesmo com sugestões de auto complete enquanto digita os códigos da folha de estilo, como mostra a imagem.</p>
 
@@ -104,7 +106,7 @@
         <p>Após salvar como estilo.css precisamos colocar o arquivo em nosso arquivo HTML, porque é ele quem vai carregar o CSS, o CSS sozinho não faz site! E é com tags de referência que você avisa ao HTML que existe um arquivo de estilo para ele, veja:</p>
 
         <code class="codigo-exemplo">
-            &lt;link rel="stylesheet" type="text/css" href="estilo.css">
+            &lt;link rel="stylesheet" href="estilo.css">
         </code>
         
         <p>Esta tag vai indicar ao HTML que tem um arquivo CSS para ser adicionado à  página. Isto deve ser adicionado dentro da tag &lt;head> &lt;/head&gt; do seu HTML, como pode ver nesse print abaixo.</p>
@@ -140,7 +142,7 @@
 
         <aside>Observação: dentro das aspas, não precisa usar o ponto (.) antes da classe pois o nome class no HTML já avisa para o CSS que é para ele buscar pelo nome da classe com ".".</aside>
 
-        [code ilustrando, no html, uma tag com a classe t�tulo]
+        <code>&lt;h1 class="titulo">Título do site&lt;/h1></code>
 
         <p>Lembrando que uma tag HTML, como h1 ou qualquer outra, pode ter mais de uma classe, basta separá-las com espaço como mostra no exemplo abaixo:</p>
         
