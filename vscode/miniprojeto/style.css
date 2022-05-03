@@ -147,6 +147,7 @@ main .codigo-exemplo{
     border-radius: 3px;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 3px;
 }
 main .bloco{
     min-width: 300px;
