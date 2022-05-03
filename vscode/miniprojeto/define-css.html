@@ -23,7 +23,7 @@
     </nav>
 
     <main>
-        <h1>O que é CSS?</h1>
+        <h1>Primeiros passos com CSS</h1>
 
         <p>CSS é a sigla para o termo em inglês <em>Cascading Style Sheets</em> que, traduzido para o português, significa Folha de Estilo em Cascatas. O <strong>CSS</strong> é fácil de aprender e entender e é facilmente utilizado com as linguagens de marcação HTML ou XHTML. Veja nosso tutorial sobre o que é CSS, como ele surgiu e como utilizar no seu site.</p>
 
@@ -111,11 +111,17 @@
         
         <p>Esta tag vai indicar ao HTML que tem um arquivo CSS para ser adicionado à  página. Isto deve ser adicionado dentro da tag &lt;head> &lt;/head&gt; do seu HTML, como pode ver nesse print abaixo.</p>
 
-        [imagem do c�digo html com o link:css]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/arquivohtml-com-linkcss-300.png" type="image/png">
+            <img src="imagem/arquivohtml-com-linkcss-700.png" alt="Imagem do código html com o link:css">
+        </picture>
 
         <p>Agora abra o documento estilo.css com o Sublime, ou o editor de sua preferência,  que provavelmente está na mesma pasta do nosso HTML.</p>
 
-        [imagem do c�digo css explicitando alguns seletores na pr�tica]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/seletores-css-300.png" type="image/png">
+            <img src="imagem/seletores-css-700.png" alt="Imagem do código css explicitando alguns seletores na prática">
+        </picture>
 
         <p>A partir desta última imagem, vamos entender como o CSS funciona com três parâmetros básicos:</p>
 
@@ -136,13 +142,16 @@
         <p><strong>2. Classes CSS</strong></p>
         <p>Criar e usar uma classe CSS é simples. No documento CSS basta colocar .nome-da-classe-que-deseja . Abaixo criamos a classe título:</p>
 
-        [imagem ilustrando o seletor da classe t�tulo]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/seletor-classe-titulo-300.png" type="image/png">
+            <img src="imagem/seletor-classe-titulo-700.png" alt="Imagem ilustrando o seletor da classe titulo">
+        </picture>
 
         <p>Note que existe um ponto (.) antes do nome da classe. Isso faz com que o CSS entenda que se está criando uma classe para ser usada no HTML. Para se adicionar essa classe que criamos dentro do CSS, basta que na tag HTML tenha o parâmetro class="".</p>
 
         <aside>Observação: dentro das aspas, não precisa usar o ponto (.) antes da classe pois o nome class no HTML já avisa para o CSS que é para ele buscar pelo nome da classe com ".".</aside>
 
-        <code>&lt;h1 class="titulo">Título do site&lt;/h1></code>
+        <code class="codigo-exemplo">&lt;h1 class="titulo">Título do site&lt;/h1></code>
 
         <p>Lembrando que uma tag HTML, como h1 ou qualquer outra, pode ter mais de uma classe, basta separá-las com espaço como mostra no exemplo abaixo:</p>
         
@@ -152,13 +161,19 @@
 
         <p>Nesta tag foram usadas três classes: "titulo", "fonte-grande" e "sublinhado". Mas para que todas estas classes tenham efeito é preciso criá-las no CSS. Veja como criamos estas classes:</p>
 
-        [imagem do codigo css criando as classes fonte-grande e sublinhado]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/classes-subli-textGran-300.png" type="image/png">
+            <img src="imagem/classes-subli-textGran-700.png" alt="Imagem do codigo css criando as classes fonte-grande e sublinhado">
+        </picture>
 
         <p><strong>3- Criando ID's CSS:</strong></p>
         <p>O uso dos ID's em CSS é parecido com as classes, mas as principais diferenças são que os id's são identificados com # e só podem ser usados um id por tag html. Para adicionar um ID ao HTML, adicione como parâmetro id="".</p>
         Veja que quando usamos o ID no HTML, também excluímos o # do id da mesma forma que excluímos o . da classe.
 
-        [imagem da css implementando o id bot�o e abaixo o html com a tag &lt;a> que usa esse id]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/classe-botao-300.png" type="image/png">
+            <img src="imagem/classe-botao-700.png" alt="Imagem da css implementando o id botão e, ao lado, o html com a tag &lt;a> que usa esse id">
+        </picture>
 
         <aside>
         DICA: Este parâmetro de ID's não é o mais apropriado para se usar em uma página para muitos botões pois pode causar conflitos com a linguagem de programação JavaScript, que utiliza normalmente dos ID's no HTML para realizar ações mais complexas.
@@ -170,7 +185,10 @@
         <h3>1- Adicionar CSS no HTML sem uso do arquivo externo</h3>
         <p>Você pode adicionar o CSS colocando o estilo dentro do próprio HTML, sem usar um arquivo CSS externo como mostra o exemplo abaixo:</p>
 
-        [imagem do html implementando a tag style no cabe�alho]
+        <picture>
+            <source media="(max-width: 400px)" srcset="imagem/style-emcabeçalho-300.png" type="image/png">
+            <img src="imagem/style-emcabeçalho-700.png" alt="Imagem do html implementando a tag style no cabeçalho">
+        </picture>
 
         <p>Neste exemplo, o estilo fica dentro do HTML mesmo, com o uso da tag &lt;style> dentro da tag &lt;head>. Isso faz com que tudo fique centralizado em um único documento.</p>
         <p>E por que não é recomendado? Quando há muitas linhas de estilo isso pode causar uma demora ao abrir a página uma vez que o navegador lê o seu documento de cima para baixo, linha por linha. Então se tiver muitas linhas de estilo para ler, vai demorar mais para o conteúdo da página ser mostrado.</p>
@@ -179,7 +197,7 @@
         <h3>2- Adicionar CSS no HTML utilizando o parâmetro style</h3>
         <p>Você pode adicionar CSS no HTML utilizando o parâmetro style em uma tag html específica. Mas isso afetará somente aquela tag e não todas as demais tags com o mesmo nome. Então, ao invés de usarmos os parâmetros id="" ou  class="", utilizaremos o parâmetro style="":</p>
         
-        <code>
+        <code class="codigo-exemplo">
             &lt;h1 style="font-size: 3rem;color: #333;text-align: center;">
         </code>
 
