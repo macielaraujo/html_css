@@ -162,7 +162,7 @@ main .bloco{
     margin: auto;
 }
 
-main aside{
+main aside p{
     display: block;
     margin-bottom: 20px;
     margin-top: 20px;
