@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topo{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.topo img{
+    width: 50px;
+    cursor: pointer;
+    
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(black,darkblue);
+    align-items: center;
+    text-align: center;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.botoes button{
+    width: 180px;
+    height: 50px;
+    padding: 20px;
+    margin: 20px;
+    background: transparent;
+    color: white;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.botoes button:hover{
+    letter-spacing: 4px;
+    color: var(--cor);
+    border: 1px solid var(--cor);
+    box-shadow: 3px 3px 8px var(--cor),
+                -3px -3px 8px var(--cor);
+    cursor: pointer;
+}
+
