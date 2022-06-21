@@ -3,7 +3,7 @@ function entrar(){
 }
 
 function inicial(){
-    window.location = 'index2.html';
+    window.location = 'index.html';
 }
 
 function entrarhtml(){
@@ -16,4 +16,8 @@ function entrarcss(){
 
 function entrarjs(){
     window.location = 'define-js.html';
+}
+
+function entrarsobre(){
+    window.location = 'sobre.html';
 }
